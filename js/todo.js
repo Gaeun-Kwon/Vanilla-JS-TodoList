@@ -20,10 +20,13 @@ function paintTodo(newTodo){
     li.id = newTodo.id; 
     const span = document.createElement("span");
     span.innerText = newTodo.text; 
+    const blank = document.createElement("span");
+    blank.innerText = " ";
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click", deleteTodo);
     li.appendChild(span);
+    li.appendChild(blank);
     li.appendChild(button);
     todoList.appendChild(li);
 } 
@@ -40,13 +43,14 @@ function handleTodoSubmit(event){
     paintTodo(newTodoObj); 
     saveTodos();
 }
+
 todoForm.addEventListener("submit", handleTodoSubmit);
 
 
 const savedTodos = localStorage.getItem(TODOS_KEY); 
 
 if (savedTodos !== null){
-    const parsedTodos = JSON.parse(savedTodos); 
+    const parsedTodos = JSON.parse(savedTodos);
     todos = parsedTodos;
     parsedTodos.forEach(paintTodo);
 }
