@@ -28,26 +28,15 @@ function deleteTodo(event){
     paintDoneTodo(doneTodoObj);
 
     //filter 이용해서 클릭된 버튼의 list 포함x인 array, 포함o인 array 만든 후
-    //concat 함수로 합쳐 todos 에 저장
-    const temp = todos.filter(todo => todo.id !== parseInt(li.id));
-    
-    doneArr = doneArr.concat(todos.filter(todo => todo.id == parseInt(li.id)));
-    //todos = temp.concat(doneArr);
-    todos = temp;
+    //남은 todos / 완료한 doneArr 로 구분해 저장
+    todos = todos.filter(todo => todo.id !== parseInt(li.id));
+    doneArr = doneArr.concat(todos.filter(todo => todo.id == parseInt(li.id)))
     saveTodos();
     saveDoneTodos();
 }
 function paintTodo(newTodo){
     const li = document.createElement("li");
     li.id = newTodo.id; 
-/*
-    doneArr.forEach(item => {
-        if(item.id === li.id){
-            console.log(1);
-            li.classList.add(DONE_CLASSNAME);
-        }
-    });
-*/
     const span = document.createElement("span");
     span.innerText = newTodo.text; 
     const button = document.createElement("button");
@@ -74,23 +63,7 @@ function paintDoneTodo(doneTodo){
     li.appendChild(span);
     todoList.appendChild(li);
 } 
-/*
-function paintaddTodo(addTodo) {
-    const li = document.createElement("li");
-    li.id = addTodo.id; 
-    const span = document.createElement("span");
-    span.innerText = addTodo.text; 
-    const button = document.createElement("button");
-    button.innerText = "완료";
-    button.addEventListener("click", deleteTodo);
 
-    li.appendChild(button);
-    li.appendChild(span);
-
-    todoList.appendChild(li);  
-    //todoList.insertBefore(li, todoList.childNodes[[(temp.length)]]);  
-}
-*/
 function handleTodoSubmit(event){
     event.preventDefault();    
     const newTodo = todoInput.value;
@@ -100,7 +73,6 @@ function handleTodoSubmit(event){
         id: Date.now() 
     };
     todos.push(newTodoObj);
-
     paintTodo(newTodoObj); 
     saveTodos();
 }
@@ -109,18 +81,9 @@ todoForm.addEventListener("submit", handleTodoSubmit);
 
 
 const savedTodos = localStorage.getItem(TODOS_KEY); 
-const savedDoneTodos = localStorage.getItem(DONE_TODOS_KEY);
 
 if (savedTodos !== null){
     const parsedTodos = JSON.parse(savedTodos);
-    const parsedDoneTodos = JSON.parse(savedDoneTodos);
-
     todos = parsedTodos;
-    doneArr = parsedDoneTodos;
-
-    //console.log(parsedTodos);
-    //console.log(parsedDoneTodos);
     parsedTodos.forEach(paintTodo);
-    parsedDoneTodos.forEach(paintDoneTodo);
 }
-
