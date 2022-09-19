@@ -30,7 +30,7 @@ function deleteTodo(event){
     //filter 이용해서 클릭된 버튼의 list 포함x인 array, 포함o인 array 만든 후
     //남은 todos / 완료한 doneArr 로 구분해 저장
     todos = todos.filter(todo => todo.id !== parseInt(li.id));
-    doneArr = doneArr.concat(todos.filter(todo => todo.id == parseInt(li.id)))
+    doneArr = doneArr.concat(doneTodoObj);
     saveTodos();
     saveDoneTodos();
 }
@@ -76,14 +76,19 @@ function handleTodoSubmit(event){
     paintTodo(newTodoObj); 
     saveTodos();
 }
-
 todoForm.addEventListener("submit", handleTodoSubmit);
 
 
 const savedTodos = localStorage.getItem(TODOS_KEY); 
+const savedDoneTodos = localStorage.getItem(DONE_TODOS_KEY);
 
 if (savedTodos !== null){
-    const parsedTodos = JSON.parse(savedTodos);
+    const parsedTodos = JSON.parse(savedTodos);    
     todos = parsedTodos;
     parsedTodos.forEach(paintTodo);
+}
+if (savedDoneTodos !== null) {
+    const parsedDoneTodos = JSON.parse(savedDoneTodos);
+    doneArr = parsedDoneTodos;
+    parsedDoneTodos.forEach(paintDoneTodo);
 }
