@@ -4,19 +4,44 @@ body {
     background-size: 100vw 100vh;
 }
 .container {
-    display: grid;
+    width: 90%;
+    margin: 0 auto;
     color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "weather user ." "quote now ." ". todos .";
 }
-
 .hidden { 
     display: none;
 }
 .done {
-    color: gray;
+    color: lightgray;
     text-decoration: line-through;
 }
 
-/*media-query-PC*/
-@media screen and (min-width: 1024px) { 
+#weather {
+    grid-area: weather;
+}
+#user {
+    grid-area: user;
+}
+#quote {
+    grid-area: quote;
+}
+#now {
+    grid-area: now;
+}
+#todos {
+    grid-area: todos;
+}
 
+/*media-query-PC*/
+@media screen and (min-width: 500px) { 
+    .container {
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
