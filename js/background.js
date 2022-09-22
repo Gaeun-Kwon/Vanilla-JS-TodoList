@@ -1,7 +1,9 @@
 const images = ["0.png", "1.png", "2.png", "3.png", "4.png"];
 
 //const chosenImage = images[Math.floor(Math.random() * images.length)];
-const bgImage = document.createElement("img");
+
+//const bgImage = document.createElement("img");
+//const bgImage = document.querySelector("body");
 
 const date = new Date();
 const hours = date.getHours();
@@ -20,7 +22,12 @@ if (hours >= 0 && hours <5) {
   chosenImage = images[4];
 }
 
-bgImage.id = "bgImg";
-bgImage.src = `img/${chosenImage}`; 
+//bgImage.id = "bgImg";
+//bgImage.src = `img/${chosenImage}`; 
 
-document.body.appendChild(bgImage); 
+//document.body.style.backgroundImage = `url(img/${chosenImage})`; 
+//document.body.style.cssText = `background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(img/${chosenImage});`;
+document.body.style.cssText = `background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/${chosenImage});`;
+
+
+//document.body.appendChild(bgImage); 
