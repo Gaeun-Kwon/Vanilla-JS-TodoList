@@ -26,15 +26,24 @@ body {
 }
 #user {
     grid-area: user;
+    /*justify-self: center; */
 }
 #quote {
     grid-area: quote;
 }
 #now {
     grid-area: now;
+    /*justify-self: center; */
 }
 #todos {
     grid-area: todos;
+    /*justify-self: center; */
+}
+
+#logout {
+    font-size: small;
+    color: gray;
+    text-decoration: underline;
 }
 
 /*media-query-PC*/
