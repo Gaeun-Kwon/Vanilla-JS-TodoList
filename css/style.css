@@ -1,9 +1,5 @@
 /*media-query-mobile*/
-body {     
-    background-image: linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    );
+body {
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
