@@ -7,7 +7,7 @@ https://gaeun-kwon.github.io/Vanilla-JS-TodoList/login.html
 
 - HTML, CSS, Vanilla JavaScript 
 - 미디어쿼리 이용해 반응형 웹 구성 (width 500px 기준으로 모바일/웹)
-- CSS Grid 레이아웃 적용
+- CSS Grid 레이아웃 적용 (grid 내부는 필요에 따라 Flex 레이아웃 적용)
 <br><br>
 ### 어플리케이션 모습
 #### Web version (min-width: 500px) 
