@@ -25,6 +25,8 @@ index.html<br>
 - weather.js<br>
 : 날씨 위젯.<br>
 OpenWeatherMap API 이용 - 사용자 위치 / 해당 위치 날씨 이미지, 현재 온도 / 해당 위치 날씨 텍스트 / 최고 기온, 최저 기온
+- quotes.js<br>
+: 새로고침 할 때마다 매번 다른 명언 표시
 - clock.js<br>
 : 오늘 날짜(월,일,요일) 와 현재 시간 표시<br>
 - todosVer2.js<br>
