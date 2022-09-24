@@ -1,0 +1,49 @@
+/*media-query-mobile*/
+body {
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  position: relative;
+  font-family: 'Pretendard-Regular';
+}
+.container {
+  width: 90%;
+  margin: 10em auto;
+  text-align: center;
+  color: white;
+}
+#text {
+    width: 50%;
+    height: 3em;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.8);
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+::placeholder{
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#submit {
+  background: none;
+  padding: 0.9em 1em;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2em;
+}
+#submit:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+/*media-query-PC*/
+@media screen and (min-width: 500px) { 
+  #text::placeholder{
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8);
+}
+}

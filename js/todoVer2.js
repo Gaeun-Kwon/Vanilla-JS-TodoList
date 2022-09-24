@@ -5,6 +5,7 @@ const todoList = document.getElementById("todo-list");
 const TODOS_KEY = "todos";
 const DONE_TODOS_KEY = "doneTodos";
 const DONE_CLASSNAME = "done";
+const DELETEBTN_CLASSNAME = "deleteBtn";
 
 let todos = [];
 let doneArr = [];
@@ -42,8 +43,9 @@ function paintTodo(newTodo){
     li.id = newTodo.id; 
     const span = document.createElement("span");
     span.innerText = newTodo.text; 
-    const button = document.createElement("button");
+    const button = document.createElement("span");
     button.innerText = "완료";
+    button.classList.add(DELETEBTN_CLASSNAME);
     button.addEventListener("click", deleteTodo);
     li.appendChild(button);
     li.appendChild(span);
@@ -55,8 +57,9 @@ function addPaintTodo(newTodo){
     li.id = newTodo.id; 
     const span = document.createElement("span");
     span.innerText = newTodo.text; 
-    const button = document.createElement("button");
+    const button = document.createElement("span");
     button.innerText = "완료";
+    button.classList.add(DELETEBTN_CLASSNAME);
     button.addEventListener("click", deleteTodo);
     li.appendChild(button);
     li.appendChild(span);

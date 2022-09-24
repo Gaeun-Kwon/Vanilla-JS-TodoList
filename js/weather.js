@@ -10,9 +10,9 @@ function onGeoOk(position){
         .then(data => {
             const weatherImg = document.querySelector("#weather img")
             const city = document.querySelector("#weather span:first-of-type")
-            const tempCurr = document.querySelector("#weather span:nth-of-type(2)")
-            const weather = document.querySelector("#weather span:nth-of-type(3)")
-            const tempMaxMin = document.querySelector("#weather span:last-of-type")
+            const tempCurr = document.querySelector("#current span")
+            const weather = document.querySelector("#weather span:nth-of-type(2)")
+            const tempMaxMin = document.querySelector("#weather span:nth-of-type(3)")
 
             weatherImg.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
             city.innerText = data.name;

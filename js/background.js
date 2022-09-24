@@ -14,9 +14,9 @@ if (hours >= 0 && hours <5) {
   chosenImage = images[0];
 } else if (hours >= 5 && hours < 9){
   chosenImage = images[1];
-} else if (hours >= 9 && hours < 17){
+} else if (hours >= 9 && hours < 18){
   chosenImage = images[2];
-} else if (hours >= 17 && hours < 21){
+} else if (hours >= 18 && hours < 22){
   chosenImage = images[3];
 } else {
   chosenImage = images[4];
