@@ -2,13 +2,13 @@
 ---
 <br> 2022년 9월 진행한, 바닐라JS를 이용한 To-do list 웹 어플리케이션 토이 프로젝트입니다. <br>
 https://gaeun-kwon.github.io/Vanilla-JS-TodoList/login.html
-
+<br><br>
 ### 사용 기술
 
 - HTML, CSS, Vanilla JavaScript 
 - 미디어쿼리 이용해 반응형 웹 구성 (width 500px 기준으로 모바일/웹)
 - CSS Grid 레이아웃 적용
-
+<br><br>
 ### 어플리케이션 모습
 #### Web version (min-width: 500px) 
 login.html<br>
@@ -19,22 +19,22 @@ login.html<br>
 
 
 index.html<br>
-- background.js
-: 시간 별로 배경이미지 다르게 적용
+- background.js<br>
+: 시간 별로 배경이미지 다르게 적용<br>
 (0~5시는 새벽, 5~9시는 아침, 9~18시는 낮, 18~22시는 저녁, 22~24시는 밤
-- weather.js
-: 날씨 위젯.
+- weather.js<br>
+: 날씨 위젯.<br>
 OpenWeatherMap API 이용 - 사용자 위치 / 해당 위치 날씨 이미지, 현재 온도 / 해당 위치 날씨 텍스트 / 최고 기온, 최저 기온
-- clock.js
-: 오늘 날짜(월,일,요일) 와 현재 시간 표시
-- todosVer2.js
-: todo 입력시 완료 버튼, todo 항목 표시
+- clock.js<br>
+: 오늘 날짜(월,일,요일) 와 현재 시간 표시<br>
+- todosVer2.js<br>
+: todo 입력시 완료 버튼, todo 항목 표시<br>
 : 완료 버튼 클릭시 리스트 취소선,회색 적용 후 맨 밑에 표시
-- greetings.js
+- greetings.js<br>
 : user 정보 표시
-- logout.js
-: 로그아웃 버튼. 
-클릭 시 경고 창 팝업 (확인/취소)
+- logout.js<br>
+: 로그아웃 버튼. <br>
+클릭 시 경고 창 팝업 (확인/취소)<br>
 확인 버튼 클릭시 유저 정보, todos, done todos 모두 삭제 후 login.html 이동
 
 <img src="https://user-images.githubusercontent.com/65700066/192098757-25a09dda-1cf9-4011-9733-188aa3594e0b.JPG" width=800>
