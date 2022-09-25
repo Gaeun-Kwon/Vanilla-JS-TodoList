@@ -7,7 +7,7 @@ const USERNAME_KEY = "username";
 
 function paintGreetings(){
     const username = localStorage.getItem(USERNAME_KEY)
-    greeting.innerText = `Welcome, ${username}`;
+    greeting.innerText = `hi, ${username}`;
     //greeting.classList.remove(HIDDEN_CLASSNAME);    
 }
 

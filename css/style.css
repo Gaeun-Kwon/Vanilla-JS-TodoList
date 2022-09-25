@@ -14,14 +14,14 @@ body {
     margin: 2em auto;
     color: white;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2em;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0em;
 }
 .hidden { 
     display: none;
 }
 .done {
-    color: gray;
+    color: lightgray;
     text-decoration: line-through;
 }
 .deleteBtn {
@@ -61,6 +61,7 @@ body {
 }
 #user {
     grid-row: 1/2;
+    grid-column: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,6 +81,7 @@ body {
 }
 #now {
     grid-row: 2/3;
+    grid-column: 1/4;
     vertical-align: middle;
     text-align: center;
 }
@@ -93,6 +95,7 @@ body {
 }
 #todos {
     grid-row: 3/4;
+    grid-column: 1/4;
     padding: 0 10%;
     text-align: center;
     display: flex;
@@ -117,6 +120,23 @@ body {
     justify-content: space-between;
     padding-bottom: 0.5em;
 }
+#deleteBtn {
+    grid-row: 1/2;
+    grid-column: 3;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    font-size: 0.8em;
+    text-align: center;
+}
+#deleteBtn:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.2s;
+}
 
 /*media-query-mobile*/
 @media screen and (min-width: 0px) and (max-width: 500px) { 
@@ -125,6 +145,15 @@ body {
     }
     #quote {
         display: none;
+    }
+    #user {
+        margin-bottom: 2em;
+    }
+    #now {
+        margin-bottom: 2em;
+    }
+    #deleteBtn {
+        margin: 0 auto;
     }
 }
 
@@ -136,7 +165,7 @@ body {
         color: white;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "weather now now user" "quote todos todos .";
+        grid-template-areas: "weather now now user" "quote todos todos delete";
         grid-gap: 2em;
     }
     #now {
@@ -147,5 +176,9 @@ body {
     }
     #user {
         grid-area: user;
+    }
+    #deleteBtn {
+        grid-area: delete;
+        margin: 0 auto;
     }
 }
