@@ -21,7 +21,7 @@ login.html<br>
 index.html<br>
 - background.js<br>
 : 시간 별로 배경이미지 다르게 적용<br>
-(0~5시는 새벽, 5~9시는 아침, 9~18시는 낮, 18~22시는 저녁, 22~24시는 밤
+(0 to 5시는 새벽, 5 to 9시는 아침, 9 to 18시는 낮, 18 to 22시는 저녁, 22 to 24시는 밤
 - weather.js<br>
 : 날씨 위젯.<br>
 OpenWeatherMap API 이용 - 사용자 위치 / 해당 위치 날씨 이미지, 현재 온도 / 해당 위치 날씨 텍스트 / 최고 기온, 최저 기온
@@ -57,8 +57,8 @@ OpenWeatherMap API 이용 - 사용자 위치 / 해당 위치 날씨 이미지, �
 미디어 쿼리 적용해, 모바일 화면의 경우 <br>
 user 정보, 로그아웃 버튼 / 현재 날짜, 현재 시간 / todol list 만 표시 <br><br>
 
-<img src="https://user-images.githubusercontent.com/65700066/192123257-6dc38887-fb39-4a7a-aea2-0dde5b20bc23.png" width=300>
-<img src="https://user-images.githubusercontent.com/65700066/192123258-91d55399-c1ba-405d-9dce-521447f72ec9.png" width=300>
+<img src="https://user-images.githubusercontent.com/65700066/192123323-0e7a414b-cc52-454e-92c2-1716202fd360.png" width=300>
+<img src="https://user-images.githubusercontent.com/65700066/192123324-fceb4b33-9e11-4c90-a81e-09e50c459176.png" width=300>
 <br>
 <img src="https://user-images.githubusercontent.com/65700066/192123272-c53c2fd2-bce5-444a-a1de-48ed0171d763.png" width=300>
 <img src="https://user-images.githubusercontent.com/65700066/192123273-e181f676-7eb0-4822-ae84-ee6d69b9e552.png" width=300>
