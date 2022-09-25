@@ -14,8 +14,8 @@ https://gaeun-kwon.github.io/Vanilla-JS-TodoList/login.html
 login.html<br>
 - localStorage에 user 정보 없는 경우 login.html 로 이동
 - 로그인 시 localStorage에 user 정보 저장 후 index.html 로 이동 <br><br>
-<img src="https://user-images.githubusercontent.com/65700066/192098763-ef9cdab2-68bd-4881-9c31-f8c16dbc2d8d.JPG" width=800>
-<img src="https://user-images.githubusercontent.com/65700066/192098764-5bc7634d-d746-4c82-89ac-1e340a6c01da.JPG" width=800>
+<img src="https://user-images.githubusercontent.com/65700066/192123155-9802bbd8-38bc-428a-8956-1f6e5b445139.JPG" width=800>
+<img src="https://user-images.githubusercontent.com/65700066/192123154-3726fee3-49ba-42f4-9ec8-d11f9b4d9362.JPG" width=800>
 
 
 index.html<br>
@@ -38,21 +38,28 @@ OpenWeatherMap API 이용 - 사용자 위치 / 해당 위치 날씨 이미지, �
 : 로그아웃 버튼. <br>
 클릭 시 경고 창 팝업 (확인/취소)<br>
 확인 버튼 클릭시 유저 정보, todos, done todos 모두 삭제 후 login.html 이동
+- delete.js<br>
+: 완료 항목 삭제 버튼.<br>
+클릭 시 완료된 todo lists 모두 삭제 후 새로고침
 
-<img src="https://user-images.githubusercontent.com/65700066/192098757-25a09dda-1cf9-4011-9733-188aa3594e0b.JPG" width=800>
+<img src="https://user-images.githubusercontent.com/65700066/192123143-7e98a96a-f96b-4a08-a431-c08e7a6d2b99.JPG" width=800>
 <br>
-<img src="https://user-images.githubusercontent.com/65700066/192098760-c41990fb-7b92-4698-ba93-467d36884b74.JPG" width=800>
+<img src="https://user-images.githubusercontent.com/65700066/192123158-98eb6f07-babf-4f5d-bfd9-4f36444a7522.JPG" width=800>
 <br>
-<img src="https://user-images.githubusercontent.com/65700066/192098759-09db9b4a-92f3-4552-9b70-fe11f6ec1be8.JPG" width=800>
+<img src="https://user-images.githubusercontent.com/65700066/192123142-f2de2984-1f15-4570-9eb1-147cbf27750c.jpg" width=800>
+<br>
+<img src="https://user-images.githubusercontent.com/65700066/192123141-27dda2f8-fd74-4fd9-ad02-2150149430b8.jpg" width=800>
+<br>
+<img src="https://user-images.githubusercontent.com/65700066/192123157-0cb2bb18-7f32-4981-9362-55b8db2e84f3.JPG" width=800>
 <br>
 
 #### Mobile version (max-width: 500px)
 미디어 쿼리 적용해, 모바일 화면의 경우 <br>
 user 정보, 로그아웃 버튼 / 현재 날짜, 현재 시간 / todol list 만 표시 <br><br>
 
-<img src="https://user-images.githubusercontent.com/65700066/192098920-6ebd731c-57b9-464c-8dd6-536927468e34.png" width=300>
-<img src="https://user-images.githubusercontent.com/65700066/192098921-18785c55-0c3f-406b-b74b-2f38c2b446cf.png" width=300>
+<img src="https://user-images.githubusercontent.com/65700066/192123257-6dc38887-fb39-4a7a-aea2-0dde5b20bc23.png" width=300>
+<img src="https://user-images.githubusercontent.com/65700066/192123258-91d55399-c1ba-405d-9dce-521447f72ec9.png" width=300>
 <br>
-<img src="https://user-images.githubusercontent.com/65700066/192098910-94776ac7-e144-443c-a57a-c15d10db620a.png" width=300>
-<img src="https://user-images.githubusercontent.com/65700066/192098917-9a179a61-ebf5-4cf2-95e3-61bfa9c75146.png" width=300>
-<img src="https://user-images.githubusercontent.com/65700066/192098916-d26ae131-dd5f-47e0-8d68-82861f7cf853.png" width=300>
+<img src="https://user-images.githubusercontent.com/65700066/192123272-c53c2fd2-bce5-444a-a1de-48ed0171d763.png" width=300>
+<img src="https://user-images.githubusercontent.com/65700066/192123273-e181f676-7eb0-4822-ae84-ee6d69b9e552.png" width=300>
+<img src="https://user-images.githubusercontent.com/65700066/192123274-5e46f8b4-aa31-4acd-9251-d4b3e53f3fda.png" width=300>
