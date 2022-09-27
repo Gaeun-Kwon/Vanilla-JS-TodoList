@@ -1,7 +1,8 @@
 # 바닐라JS를 이용한 To-do list 웹 어플리케이션
 ---
 <br> 2022년 9월 진행한, 바닐라JS를 이용한 To-do list 웹 어플리케이션 토이 프로젝트입니다. <br>
-https://gaeun-kwon.github.io/Vanilla-JS-TodoList/login.html
+https://gaeun-kwon.github.io/Vanilla-JS-TodoList/login.html<br>
+https://www.notion.so/JS-Todo-9d82b5c78c224c0ab351a3f3ddcf9ee0
 <br><br>
 ### 사용 기술
 
