@@ -52,6 +52,13 @@ OpenWeatherMap API 이용 - 사용자 위치 / 해당 위치 날씨 이미지, �
 <br>
 <img src="https://user-images.githubusercontent.com/65700066/192123157-0cb2bb18-7f32-4981-9362-55b8db2e84f3.JPG" width=800>
 <br>
+시간별 background image 적용된 모습 <br>
+<img src="https://user-images.githubusercontent.com/65700066/192552683-3e6dd080-cb6b-44c5-b4e3-35e8ffa30f9e.JPG" width=800>
+<img src="https://user-images.githubusercontent.com/65700066/192552695-a8a783da-0e5b-4cfe-968f-ecb1cdef7324.JPG" width=800>
+<img src="https://user-images.githubusercontent.com/65700066/192552708-0a61b715-01fb-48cb-8a17-963c077524c3.JPG" width=800>
+<img src="https://user-images.githubusercontent.com/65700066/192552727-e775fe08-4cda-41d7-8092-8e11cc57c547.JPG" width=800>
+<img src="https://user-images.githubusercontent.com/65700066/192552750-e4d28539-e7b4-46c9-9f33-e3bb67ecef8d.JPG" width=800>
+<br>
 
 #### Mobile version (max-width: 500px)
 미디어 쿼리 적용해, 모바일 화면의 경우 <br>
